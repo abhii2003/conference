@@ -3,9 +3,9 @@ import { useRouter } from 'next/router';
 import '@/styles/globals.scss';
 import Nav from '@/components/nav';
 import Footer from '@/components/footer';
-import { AuthProvider } from "@/lib/auth.js";
 import Sidebar from '@/components/dashsidebar';
-
+import { Provider } from 'react-redux';
+import store from '../redux/store';
 
 
 export default function App({ Component, pageProps }) {
@@ -20,25 +20,23 @@ export default function App({ Component, pageProps }) {
   if (dashBoard) {
     return (
       <>
-        <AuthProvider>
+        <Provider store={store}>
           <Nav />
           <Component {...pageProps} />
           <Footer />
           <Sidebar />
-        </AuthProvider >
+        </Provider>
       </>
     )
   }
   else {
     return (
       <>
-
-        <AuthProvider>
+        <Provider store={store}>
           <Nav />
           <Component {...pageProps} />
           <Footer />
-        </AuthProvider >
-
+        </Provider>
       </>
     )
   }

@@ -56,7 +56,12 @@ function Cards(
                         <div className={styles.namecontainer} >{name}</div>
                         <div className={styles.detailcontainer}>
                             <div>{details}</div>
-                            <div className={styles.button}>^</div>
+                            <div className={styles.button}>
+                                <button className={styles.openButton} onClick={() => { document.getElementById("fullDetails").setAttribute("data-visible", "true") }}>^</button>
+                                <div className={styles.fullDetails} id="fullDetails" data-visible="false">
+                                    <button className={styles.closeButton} onClick={() => { document.getElementById("fullDetails").setAttribute("data-visible", "false") }}>x</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
