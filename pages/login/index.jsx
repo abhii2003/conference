@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { setUser } from '@/redux/userSlice';
-import { auth } from '@/firebase';
+// import { setUser } from '@/redux/userSlice';
+// import { auth } from '@/firebase';
 import Head from 'next/head';
 import styles from '@/styles/components/login_and_signup_page/Login.module.scss';
 

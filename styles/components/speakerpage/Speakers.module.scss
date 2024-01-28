@@ -6,43 +6,53 @@
   @include section;
   background-color: #ffffff;
 }
+
 .sectionWrapper {
   @include sectionWrapper;
 }
-.headingSpeakers > h1 {
+
+.headingSpeakers>h1 {
   font-size: 2em;
 }
+
 .headingSpeakers {
   //   @include sectionTitle;
   grid-column: 4/10;
   text-align: center;
 }
+
 @media (max-width: 1897px) {
   .headingSpeakers {
     grid-column: 3/10;
   }
 }
+
 @media (max-width: 1626px) {
-  .headingSpeakers > h1 {
+  .headingSpeakers>h1 {
     font-size: 1.6em;
   }
+
   .headingSpeakers {
     grid-column: 3/10;
   }
 }
+
 @media (max-width: 992px) {
   .headingSpeakers {
     grid-column: 2/8;
   }
 }
+
 @media (max-width: 625px) {
-  .headingSpeakers > h1 {
+  .headingSpeakers>h1 {
     font-size: 1.4em;
   }
+
   .headingSpeakers {
     grid-column: 1/9;
   }
 }
+
 .sectionWrapper {
   @include sectionWrapper;
 }
