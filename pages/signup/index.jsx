@@ -58,9 +58,9 @@ function SignUp() {
                 <a href="/login/"> Login</a>
               </span>
             </div>
-            <div className={styles.additional_options}>
+            {/* <div className={styles.additional_options}>
               Sign up with<button>google</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

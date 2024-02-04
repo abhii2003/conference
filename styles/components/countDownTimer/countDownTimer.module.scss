@@ -16,7 +16,7 @@
 .innerContainer {
     height: 30px;
     margin-top: 20px;
-    color: $primary-color;
+    color: #000000;
     gap: 2px;
     font-size: 0.6em;
 }
@@ -37,9 +37,6 @@
     }
 
     .innerContainer {
-        height: 30px;
-        margin-top: 20px;
-        color: $primary-color;
         gap: 2px;
         font-size: 0.4em;
     }
